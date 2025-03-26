@@ -1,0 +1,19 @@
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Ensure Netlify uses the latest Node version
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--no-optional"
+
+# Cache settings to improve build performance
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Handle SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
