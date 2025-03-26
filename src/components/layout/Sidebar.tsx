@@ -48,7 +48,7 @@ const Sidebar = ({ className }: SidebarProps) => {
 
   return (
     <aside className={cn("w-[250px] h-screen bg-white border-r border-gray-200 flex flex-col py-4 animate-fade-in", className)}>
-      <div className="px-6 mt-2 mb-6 flex justify-center">
+      <div className="px-6 mt-2 mb-4 flex justify-center">
         <img 
           src="/lovable-uploads/f17b54d9-c1da-4b89-b411-fe787ffe1ecf.png" 
           alt="Skawsh Logo" 
@@ -56,7 +56,7 @@ const Sidebar = ({ className }: SidebarProps) => {
         />
       </div>
       
-      <nav className="flex-1 px-3 space-y-1">
+      <nav className="flex-1 px-3 space-y-0.5">
         {navItems.map((item) => (
           <Link 
             key={item.id}
