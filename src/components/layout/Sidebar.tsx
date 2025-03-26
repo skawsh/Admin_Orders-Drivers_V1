@@ -54,9 +54,6 @@ const Sidebar = ({ className }: SidebarProps) => {
           alt="Skawsh Logo" 
           className="w-32 h-auto mb-2"
         />
-        <h1 className="text-xl font-bold text-laundry-blue bg-gradient-to-r from-laundry-blue to-laundry-blue-light bg-clip-text text-transparent">
-          Admin
-        </h1>
       </div>
       
       <nav className="flex-1 px-3 space-y-1">
