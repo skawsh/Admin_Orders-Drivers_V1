@@ -30,6 +30,9 @@ export default defineConfig(({ mode }) => ({
       }
     }
   },
+  optimizeDeps: {
+    exclude: ['@rollup/rollup-linux-x64-gnu']
+  },
   plugins: [
     react(),
     mode === 'development' &&
