@@ -1,6 +1,6 @@
 
 [build]
-  command = "npm run build"
+  command = "ROLLUP_SKIP_LOAD_NATIVE_PLUGIN=1 npm run build"
   publish = "dist"
 
 # Ensure Netlify uses the latest Node version
