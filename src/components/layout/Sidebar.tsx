@@ -48,11 +48,11 @@ const Sidebar = ({ className }: SidebarProps) => {
 
   return (
     <aside className={cn("w-[250px] h-screen bg-white border-r border-gray-200 flex flex-col py-4 animate-fade-in", className)}>
-      <div className="px-6 mb-6 flex flex-col items-center">
+      <div className="px-6 mt-2 mb-6 flex justify-center">
         <img 
           src="/lovable-uploads/f17b54d9-c1da-4b89-b411-fe787ffe1ecf.png" 
           alt="Skawsh Logo" 
-          className="w-32 h-auto mb-2"
+          className="w-32 h-auto"
         />
       </div>
       
