@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   LayoutDashboard, 
@@ -20,15 +19,12 @@ interface SidebarProps {
 
 const Sidebar = ({ className }: SidebarProps) => {
   const location = useLocation();
-  // Get the current route to highlight active links
   const currentPath = location.pathname;
   
-  // Get activePage based on current path
   const getActivePage = () => {
     if (currentPath.includes('/drivers')) return 'drivers';
     if (currentPath === '/') return 'orders';
     if (currentPath.includes('/settings')) return 'settings';
-    // Add more conditions as needed
     return currentPath.split('/')[1] || '';
   };
   
@@ -52,7 +48,7 @@ const Sidebar = ({ className }: SidebarProps) => {
         <img 
           src="/lovable-uploads/f17b54d9-c1da-4b89-b411-fe787ffe1ecf.png" 
           alt="Skawsh Logo" 
-          className="w-32 h-auto"
+          className="w-36 h-auto"
         />
       </div>
       
